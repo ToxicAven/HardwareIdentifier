@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "6.1.0"
+}
+
+group 'aven.toxic'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'commons-codec:commons-codec:1.15'
+}
+
+shadowJar {
+    dependencies {
+        include(dependency('commons-codec:commons-codec:1.15'))
+    }
+    classifier = 'release'
+}
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'aven.toxic.hwid.main'
+        )
+    }
+}
+
+build.dependsOn(shadowJar)
