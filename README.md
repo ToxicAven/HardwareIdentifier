@@ -3,4 +3,6 @@
  
  ## To Build
  
-`$ gradlew shadowJar`
+```
+$ gradlew shadowJar
+```
