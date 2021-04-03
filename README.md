@@ -1,6 +1,8 @@
 # HardwareIdentifier
  Java Program to generate a Hardware ID to Lock Software to Hardware, by taking Operating system Details and generating a Hash.
  
+ # YEAH, DON'T USE THIS. IT IS NOT GOOD AT ALL
+ 
  ## Instructions
  
  #### Download
